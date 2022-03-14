@@ -35,10 +35,6 @@ let noContactUnderline = () => {
     contact.style.textDecoration = '';
 };
 
-
-skills.style.textDecoration = 'underline';
-contact.style.textDecoration = 'underline';
-
 about.addEventListener('mouseover', aboutUnderline);
 about.addEventListener('mouseout', noAboutUnderline);
 
