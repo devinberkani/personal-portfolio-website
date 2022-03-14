@@ -6,76 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devin Berkani | Software Developer</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!--font awesome icons--> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
 
-    <!--header title and navigation-->
-    <header>
-        <nav>
-            <h2 id="logo">Devin Berkani</h2>
-            <ul id="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>        
+    <!--header/navigation-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"><h2>Devin Berkani</h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="container">
+                <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#header">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+        </nav>
     </header>
 
+    <!--start of main-->
+    <main id="main" style="padding-top: 70px; padding-bottom: 55px;">
+        <div class="container-fluid">
 
-    <main>
+            <!--start of row 1 - image and about -->
+		    <div class="row p-3 bg-light">
+                <!--start of image-->
+                <div class="col-12 col-lg-5 mt-3">
+                    <section id="image" class="text-center">
+					    <img src="https://avatars.githubusercontent.com/u/100695619?v=4" class="img-fluid rounded" alt="Devin Berkani looking super cool"/>
+                    </section>
+                </div>
 
-        <!--image-->
-        <section id="image">
-            <img src="https://avatars.githubusercontent.com/u/100695619?s=400&u=f7a837824937fb5b2326b6f31c2c1c8dbecdab49&v=4" alt="Devin Berkani wearing sunglasses, simultaneously looking insanely cool">
-        </section>
-
-        <!--about short bio with social-->
-        <section id="about">
-            <h2>About</h2>
-            <h3>Bio</h3>
-                <p>I like to learn and build with technology. Let's make something special.</p>
-            <h3>Social</h3>
-            <div id="social-container">
-                <i class="fa-brands fa-twitter-square"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github-square"></i>
+                <!--start of about-->
+                <div class="col-12 col-lg-6 mt-3 pt-3 pb-3 border rounded">
+                    <section id="about">
+                        <h2>About Me</h2>
+                        <hr class="mb-4">
+                            <p>I like to learn and build with technology. Let's build something special together.</p>
+                        <h3>Let's Connect</h3>
+                            <a href="https://twitter.com/devinberkani" target="_blank"><i class="fa-brands fa-twitter-square m-2" style="font-size: 48px; color:#161c2d;"></i></a>
+                            <a href="https://www.linkedin.com/in/devin-berkani-789556104/" target="_blank"><i class="fa-brands fa-linkedin m-2" style="font-size: 48px;color:#161c2d;"></i></a>
+                            <a href="https://github.com/devinberkani" target="_blank"><i class="fa-brands fa-github-square m-2" style="font-size: 48px;color:#161c2d;"></i></a>
+                            <p>Have a question or want to work together?</p>
+                            <a href="mailto:devinberkani@gmail.com"><button type="button" class="btn btn-primary">Send Me An Email</button></a>
+                    </section>
+                </div>
             </div>
-        </section>
 
-        <!--skills-->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div id="skills-container">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-git-square"></i>
+            <!--start of row 2 - projects -->
+            <div class="row text-center mt-3">
+                <!--start of skills-->
+                <div class="col-12">
+                    <section id="projects">
+					    <h2 class="m-3">Projects</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4">
+                              <!-- First Card -->
+                              <div class="card">
+                                <img class="card-img-top"
+                                  src="https://content.codecademy.com/courses/learn-bootstrap-components/mock%20website%20assets/straps.jpg"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <p class="card-text">Project 1</p>
+                                </div>
+                              </div>
+                              <!-- End of First Card -->
+                            </div>
+                      
+                            <div class="col-10 col-md-4">
+                              <!-- Second Card -->
+                              <div class="card">
+                                <img class="card-img-top"
+                                  src="https://content.codecademy.com/courses/learn-bootstrap-components/mock%20website%20assets/straps.jpg"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <p class="card-text">Project 2</p>
+                                </div>
+                              </div>
+                              <!-- End of Second Card -->
+                            </div>
+                      
+                            <div class="col-10 col-md-4">
+                              <!-- Third Card -->
+                              <div class="card">
+                                <img class="card-img-top"
+                                  src="https://content.codecademy.com/courses/learn-bootstrap-components/mock%20website%20assets/straps.jpg"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <p class="card-text">Project 3</p>
+                                </div>
+                              </div>
+                              <!-- End of Third Card -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
 
-        <!--projects-->
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
-        
-        <!--contact-->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Have a question or want to work together? Let's connect.</p>
-            <button type="button"><a href = "mailto: devinberkani@gmail.com">Contact Devin Berkani</a></button>
-        </section>
+            <!--start of row 3 - skills -->
+            <div class="row text-center p-5 mt-3 bg-light">
+                <!--start of skills-->
+                <div class="col-12">
+                    <section id="skills">
+					    <h2 class="m-3">Skills</h2>
+                            <i class="fa-brands fa-html5 m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-css3-alt m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-js-square m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-node m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-react m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-git m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-github m-4" style="font-size: 48px;"></i>
+                            <i class="fa-brands fa-python m-4" style="font-size: 48px;"></i>
+                    </section>
+                </div>
+            </div>
 
+            <!--start of row 4 - contact -->
+            <div class="row text-center p-5">
+                <!--start of contact-->
+                <div class="col-12">
+                    <section id="skills">
+					    <h2>Contact</h2>
+                            <p>Have a question or want to work together? Let's connect.</p>
+                            <a href="mailto:devinberkani@gmail.com"><button type="button" class="btn btn-primary">Send Me An Email</button></a>
+                    </section>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <!--footer copyright info-->
+    <!--start of footer-->
     <footer id="footer">
-        <p>Copyright &copy; 2022 Devin Berkani. All Rights Reserved.</p>
+        <div class="container-fluid fixed-bottom text-center bg-dark pt-2" style="color:white;">
+            <p>Copyright &#169; 2022 Devin Berkani. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
